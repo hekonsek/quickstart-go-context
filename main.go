@@ -21,7 +21,7 @@ func runTask(ctx context.Context, taskTime time.Duration) {
 }
 
 func timeoutContextBeforeTaskIsFinished() {
-	fmt.Println("This example should time out task excution:")
+	fmt.Println("This example should time out task execution:")
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel() // Always cancel() to avoid context leak
 
